@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<header class="bg-dark text-primary text-center">HEADER</header>
+<div class="container">
+    <div class="row my-5">
+        <div class="col-6 bg-danger text-white text-center">hello world</div>
+        <div class="col-6 bg-primary text-center">Bonjour le monde</div>
+    </div>
+    <div class="row">
+        {% for item in 1..13 %}
+        <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="bg-success">carte</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row d-flex justify-content-center mt-4">
+        <button class="btn btn-success col-10 col-md-6 col-lg-2">Enregistrer</button>
+    </div>
+
+</div>  
+{% endblock %}
